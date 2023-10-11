@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <title>Gym</title>
+</head>
+<body>
+    <div class="header aboutt pt-5 pb-5 position-relative">
+        <div class="container">
+            <div class="head d-flex justify-content-between align-items-center">
+                <div class="logo">
+                    <img src="./img/gym logo.png" alt="">
+                </div>
+                <div class="bar" style="cursor: pointer;">
+                    <svg class="fs-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path fill="#ffffff" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+                </div>
+                <div class="links">
+                    <ul class="d-flex justify-content-between align-items-center ">
+                        <li class="m-2 text-capitalize"><a class=" text-decoration-none fs-5" href="./index.html">home</a></li>
+                        <li class="m-2 text-capitalize"><a class="text-decoration-none fs-5" href="./about.html">about </a></li>
+                        <li class="m-2 text-capitalize"><a class="active text-decoration-none fs-5" href="./class.html">classes</a></li>
+                        <li class="m-2 text-capitalize"><a class="text-decoration-none fs-5" href="./services.html">services</a></li>
+                        <li class="m-2 text-capitalize"><a class="text-decoration-none fs-5" href="./team.html">our team</a></li>
+                        <li class="m-2 text-capitalize"><a class="text-decoration-none fs-5" href="./contact.html">contact</a></li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <svg style="cursor: pointer;" class="fs-4 mx-1" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" /></svg>
+                    <svg style="cursor: pointer;" class="fs-4 mx-1" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path  d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+                    <svg style="cursor: pointer;" class="fs-4 mx-1" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path  d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+                    <svg style="cursor: pointer;" class="fs-4 mx-1" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </div>
+            </div>
+            <div class=" text-light text-uppercase about-text text-center top-50 position-absolute start-50">
+                <h1 class="fs-1 fw-bolder">CLASSES DETAIL</h1>
+                <p class="fw-bold fs-5">home > <span>CLASSES</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="content py-5 bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="box col-lg-8">
+                    <div class="img">
+                        <img style="height: 80vh;" src="./img/class-detailsl.jpg" alt="">
+                    </div>
+                    <div class="text mt-5">
+                        <h2 class="text-uppercase text-light my-4 fw-bold">body building</h2>
+                        <p class="text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim eos eveniet quod corporis odio hic aliquam. Dignissimos quibusdam, quia, voluptatum quidem, unde ab aut mollitia ut repellendus accusantium temporibus blanditiis.</p>
+                    </div>
+                    <div class="text mt-5">
+                        <h2 class="text-uppercase text-light my-4 fw-bold">trainer</h2>
+                        <p class="text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim eos eveniet quod corporis odio hic aliquam. Dignissimos quibusdam, quia, voluptatum quidem, unde ab aut mollitia ut repellendus accusantium temporibus blanditiis.</p>
+                    </div>
+                    <div class="row my-5">
+                        <div class="box col-lg-6 col-md-6">
+                            <div class="img">
+                                <img style="height: 85vh;" src="./img/team-1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="box col-lg-6 col-md-6">
+                            <div class="text">
+                                <h2 class="text-light fw-bold ">Athart Rachel</h2>
+                                <span class="text-secondary">GYM TRAINER</span>
+                                <p class="text-secondary mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia aut repellat iure, commodi, ad sint sequi natus officiis adipisci nam, eum doloremque aperiam. Blanditiis ut neque repellat veritatis ab officiis?</p>
+                            </div>
+                            <div class="about">
+                                <div class="div d-flex text-capitalize justify-content-evenly align-items-center">
+                                    <span class="text-light fw-bold">age</span>
+                                    <span class="text-secondary">35</span>
+                                </div>
+                                <div class="div my-3 text-capitalize d-flex justify-content-evenly align-items-center">
+                                    <span class="text-light fw-bold">Weight</span>
+                                    <span class="text-secondary">148</span>
+                                </div>
+                                <div class="div text-capitalize d-flex justify-content-evenly align-items-center">
+                                    <span class="text-light fw-bold">height</span>
+                                    <span class="text-secondary">10,2</span>
+                                </div>
+                            </div>
+                            <p class="text-secondary mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, at esse deleniti sint aperiam atque ut veritatis, iure magni dignissimos amet. Quaerat veniam nobis quas quam optio earum dolor temporibus!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box col-lg-4 col-md-8">
+                    <div class="ceta">
+                        <h3 class="text-light mx-4 mb-4">CATEGORIES</h3>
+                        <ul>
+                            <li>
+                                <div class="d-flex text-capitalize justify-content-between align-items-center">
+                                    <span>yoga</span>
+                                    <span>12</span>
+                                </div>
+                            </li>
+                            <li class="my-3">
+                                <div class="d-flex text-capitalize justify-content-between align-items-center">
+                                    <span>runing</span>
+                                    <span>32</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex text-capitalize justify-content-between align-items-center">
+                                    <span>Weightloss</span>
+                                    <span>86</span>
+                                </div>                            </li>
+                            <li class="my-3">
+                                <div class="d-flex text-capitalize justify-content-between align-items-center">
+                                    <span>cario</span>
+                                    <span>25</span>
+                                </div>                            </li>
+                            <li>
+                                <div class="d-flex text-capitalize justify-content-between align-items-center">
+                                    <span>body building</span>
+                                    <span>36</span>
+                                </div>                            </li>
+                            <li class="my-3">
+                                <div class="d-flex text-capitalize justify-content-between align-items-center">
+                                    <span>Nutrition</span>
+                                    <span>15</span>
+                                </div>                            </li>
+                        </ul>
+                    </div>
+                    <div class="latest ms-4">
+                        <h3 class="text-uppercase my-4 fw-bold text-light">latest posts</h3>
+                        <img style="height: 40vh;" src="./img/class-5.jpg" alt="">
+                        <div class="box d-flex my-4 justify-content-between align-items-center">
+                            <div class="img me-3">
+                                <img src="./img/latest-2.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <p class="m-0 text-light">Grilled Potato and Green Bean Salad</p>
+                                <span class="text-secondary">Aug 15, 2019</span>
+                            </div>
+                        </div>
+                        <div class="box d-flex my-4 justify-content-between align-items-center">
+                            <div class="img me-3">
+                                <img src="./img/latest-3.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <p class="m-0 text-light">Grilled Potato and Green Bean Salad</p>
+                                <span class="text-secondary">Aug 15, 2019</span>
+                            </div>
+                        </div>
+                        <div class="box d-flex my-4 justify-content-between align-items-center">
+                            <div class="img me-3">
+                                <img src="./img/latest-4.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <p class="m-0 text-light">Grilled Potato and Green Bean Salad</p>
+                                <span class="text-secondary">Aug 15, 2019</span>
+                            </div>
+                        </div>
+                        <div class="box d-flex my-4 justify-content-between align-items-center">
+                            <div class="img me-3">
+                                <img src="./img/latest-5.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <p class="m-0 text-light">Grilled Potato and Green Bean Salad</p>
+                                <span class="text-secondary">Aug 15, 2019</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img my-5 ms-4">
+                        <img src="./img/sidebar-banner.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer py-5">
+        <div class="container">
+            <div class="row mb-4 justify-content-between">
+                <div class="box col-lg-6 col-md-12">
+                    <div class="img mb-4"><img src="./img/gym logo.png" alt=""></div>
+                    <div class="text text-secondary">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur magnam, possimus excepturi nemo rerum deserunt iusto unde assumenda accusamus aut temporibus recusandae, incidunt consequatur! Totam magni ea ipsum esse dolor?</p>
+                    </div>
+                </div>
+                <div class="box col-lg-3 col-md-6">
+                    <h3 class="text-light text-capitalize ms-4">useful links</h3>
+                    <ul>
+                        <li><a class="text-decoration-none text-secondary text-capitalize" href="">about</a></li>
+                        <li class="my-2"><a class="text-decoration-none text-secondary text-capitalize" href="">blog</a></li>
+                        <li><a class="text-decoration-none text-secondary text-capitalize" href="">classes</a></li>
+                        <li class="my-2"><a class="text-decoration-none text-secondary text-capitalize" href="">contact</a></li>
+                    </ul>
+                </div>
+                <div class="box col-lg-3 col-md-6 ">
+                    <h3 class="text-light ms-4 text-capitalize">support</h3>
+                    <ul>
+                        <li><a class="text-decoration-none text-capitalize text-secondary" href="">login</a></li>
+                        <li class="my-2"><a class="text-decoration-none text-capitalize text-secondary" href="">my account</a></li>
+                        <li><a class="text-decoration-none text-capitalize text-secondary" href="">subscribe</a></li>
+                        <li class="my-2"><a class="text-decoration-none text-secondary text-capitalize" href="">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="foot text-light text-center mt-3">This template is made with  by <span class="text-warning text-capitalize fw-bold">nour aldeen taifour</span></div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="./js/app.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
